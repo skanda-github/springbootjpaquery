@@ -1,7 +1,5 @@
 # springbootjpaquery
 
----
-
 This project demonstrates how to write custom queries using `@Query` annotation and JPQL in Spring Boot with a simple `User` entity. You'll learn how to:
 
 * Write JPQL queries
