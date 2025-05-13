@@ -1,0 +1,28 @@
+### Create User
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com",
+  "age": 28
+}
+
+### Create another User
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "name": "Bob",
+  "email": "bob@example.com",
+  "age": 35
+}
+
+### Get User by Email
+GET http://localhost:8080/api/users/email/alice@example.com
+
+### Search Users by Name (partial match, case-insensitive)
+GET http://localhost:8080/api/users/search?keyword=ali
+
+### Get Users Older Than 25
+GET http://localhost:8080/api/users/older-than/25
